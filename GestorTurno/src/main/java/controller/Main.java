@@ -3,7 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.gestordeturnospersistencia.controller;
+package controller;
+
+import com.mycompany.gestordeturnospersistencia.dao.Conexion;
+import model.Organismo;
 
 /**
  *
@@ -11,6 +14,12 @@ package com.mycompany.gestordeturnospersistencia.controller;
  */
 public class Main {
     public static void main(String[] args) {
+        new Conexion();
+        Organismo o = new Organismo();
+        
+        GestorOrganismo controller = new GestorOrganismo();
+        controller.crearOrganismo(o);
+        
         
     }
 }
